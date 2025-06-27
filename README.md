@@ -7,15 +7,14 @@ Este é um sistema completo de gerenciamento de vendas desenvolvido em linguagem
 - Cadastro e gestão de clientes
 - Cadastro e gestão de produtos
 - Processamento completo de vendas
-- Geração de relatórios e consultas
 
 ## Funcionalidades
 
 ### Gestão de Clientes
 - Cadastro de novos clientes (nome, idade, CPF)
-- Listagem completa de clientes
+- Listagem completa de clientes, vendas e produtos.
 - Edição de informações cadastrais
-- Exclusão de clientes
+- Exclusão de clientes e produto
 
 ### Gestão de Produtos
 - Cadastro de produtos (nome, preço)
@@ -29,14 +28,14 @@ Este é um sistema completo de gerenciamento de vendas desenvolvido em linguagem
 - Seleção de método de pagamento (dinheiro, PIX, cartão)
 - Histórico completo de vendas
 
-### Relatórios
+### Listas
 - Listagem de todas as vendas realizadas
 - Identificação do produto mais vendido
 - Visualização de detalhes de cada venda
 
 ## Interface do Usuário
 
-O sistema possui um menu interativo com as seguintes opções:
+O sistema possui um menu com as seguintes opções:
 
 ```
 +-------------------------+
@@ -75,8 +74,6 @@ O sistema possui um menu interativo com as seguintes opções:
 - Interface textual sem recursos gráficos
 
 ## ✉️ Contato
-
-Para dúvidas ou sugestões, entre em contato:
 
 - Email: [igor22@unochapeco.edu.br]
 - GitHub: [Igor-Dev22]
