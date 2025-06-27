@@ -1,39 +1,75 @@
-# Sistema de Vendas
+# Sistema de Gerenciamento de Vendas em C
 
-Este projeto consiste no desenvolvimento de um sistema de vendas simples em **linguagem C**, com funcionalidades essenciais para o gerenciamento de **clientes**, **produtos** e **vendas**. Foi desenvolvido como parte de um trabalho acadêmico, com foco em **programação estruturada**, **manipulação de dados** e **boas práticas de codificação**.
+## Descrição
 
----
+Este é um sistema completo de gerenciamento de vendas desenvolvido em linguagem C, projetado para pequenos negócios ou como projeto acadêmico. O sistema permite:
 
-## Objetivo
-
-Simular um sistema básico de ponto de vendas, permitindo:
-
-- Cadastro, atualização, listagem e exclusão de **clientes** e **produtos**.
-- Registro de **vendas** associadas a clientes e produtos.
-
----
+- Cadastro e gestão de clientes
+- Cadastro e gestão de produtos
+- Processamento completo de vendas
+- Geração de relatórios e consultas
 
 ## Funcionalidades
 
-### Cadastro
-- **Cadastrar Cliente**: Inserção de dados de um novo cliente (nome, idade, CPF).
-- **Cadastrar Produto**: Registro de um novo produto com nome, código e preço.
-- **Cadastrar Venda**: Associa um cliente a um ou mais produtos, com cálculo do valor total e seleção da forma de pagamento (dinheiro, pix, cartão, crediário).
+### Gestão de Clientes
+- Cadastro de novos clientes (nome, idade, CPF)
+- Listagem completa de clientes
+- Edição de informações cadastrais
+- Exclusão de clientes
 
-### Listagem
-- **Listar Clientes**: Exibe todos os clientes cadastrados.
-- **Listar Produtos**: Exibe todos os produtos cadastrados.
+### Gestão de Produtos
+- Cadastro de produtos (nome, preço)
+- Listagem de todos os produtos
+- Atualização de informações
+- Remoção de produtos
 
-### Atualização
-- **Editar Cliente**: Permite modificar nome, idade ou CPF.
-- **Editar Produto**: Permite modificar nome, preço ou código.
+### Processamento de Vendas
+- Registro de vendas com múltiplos produtos
+- Cálculo automático do valor total
+- Seleção de método de pagamento (dinheiro, PIX, cartão)
+- Histórico completo de vendas
 
-### Exclusão
-- **Excluir Cliente**: Remove um cliente, desde que não vinculado a uma venda.
-- **Excluir Produto**: Remove um produto do sistema, se possível.
+### Relatórios
+- Listagem de todas as vendas realizadas
+- Identificação do produto mais vendido
+- Visualização de detalhes de cada venda
 
----
-## Autor
+## Interface do Usuário
 
-*Igor Burkhardt*  
-📧 E-mail: [igor22@unochapeco.edu.br](mailto:igor22@unochapeco.edu.br)
+O sistema possui um menu interativo com as seguintes opções:
+
+```
++-------------------------+
+|0 = sair                 |
+|1 = cadastrar clientes   |
+|2 = cadastrar produtos   |
+|3 = efetuar uma venda    |
+|4 = listar os clientes   |
+|5 = listar os produtos   |
+|6 = excluir um cliente   |
+|7 = excluir um produto   |
+|8 = editar um cliente    |
+|9 = editar um produto    |
+|10 = listar vendas       |
+|11 = produto mais vendido|
++-------------------------+
+```
+### Funções Principais
+- `cadastro_cliente()`: Gerencia o cadastro de clientes
+- `cadastro_produto()`: Gerencia o cadastro de produtos
+- `venda()`: Processa novas vendas
+- `listar_vendas()`: Exibe o histórico de vendas
+- `produto_mais_vendido()`: Gera relatório do produto mais vendido
+
+## Limitações do sistema
+
+- Capacidade fixa para 10 clientes, 10 produtos e 50 vendas
+- Dados são armazenados apenas em memória (não persistem após encerramento)
+- Interface textual sem recursos gráficos
+
+## ✉️ Contato
+
+Para dúvidas ou sugestões, entre em contato:
+
+- Email: [igor22@unochapeco.edu.br]
+- GitHub: [Igor-Dev22]
