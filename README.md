@@ -55,11 +55,18 @@ O sistema possui um menu interativo com as seguintes opções:
 +-------------------------+
 ```
 ### Funções Principais
-- `cadastro_cliente()`: Gerencia o cadastro de clientes
-- `cadastro_produto()`: Gerencia o cadastro de produtos
-- `venda()`: Processa novas vendas
-- `listar_vendas()`: Exibe o histórico de vendas
-- `produto_mais_vendido()`: Gera relatório do produto mais vendido
+- `cadastro_cliente()`
+- `cadastro_produto()`
+- `venda()`
+- `listar_vendas()`
+- `listar_clientes()`
+- `listar_produto()`
+- `excluir_cliente()`
+- `excluir_produto()`
+- `editar_cliente()`
+- `editar_produto()`
+- `produto_mais_vendido()`
+
 
 ## Limitações do sistema
 
